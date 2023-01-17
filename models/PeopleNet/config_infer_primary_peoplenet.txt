@@ -1,0 +1,1 @@
+/opt/nvidia/deepstream/deepstream/samples/models/PeopleNet/config_infer_primary_peoplenet.txt
