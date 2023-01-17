@@ -1,0 +1,12 @@
+net-scale-factor=1.0
+offsets=103.939;116.779;123.68
+infer-dims=3;100;100
+tlt-model-key=nvidia_tao
+network-type=1
+num-detected-classes=2
+uff-input-order=0
+output-blob-names=predictions/Softmax
+uff-input-blob-name=input_1
+model-color-format=1
+maintain-aspect-ratio=0
+output-tensor-meta=0
