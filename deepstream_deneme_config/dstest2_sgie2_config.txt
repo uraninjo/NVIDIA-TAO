@@ -56,12 +56,10 @@
 gpu-id=0
 net-scale-factor=1
 tlt-model-key=tlt_encode
-tlt-encoded-model=../../../../samples/models/
+tlt-encoded-model=../../models/GenderNet/final_model.etlt
+labelfile-path=/opt/nvidia/deepstream/deepstream-6.1/samples/models/GenderNet/labels.txt
 
-labelfile-path=../../../../samples/models/Secondary_CarMake/labels.txt
-int8-calib-file=../../../../samples/models/Secondary_CarMake/cal_trt.bin
-
-input-dims=3;100;100;0
+input-dims=3;100;100
 uff-input-blob-name=input_1
 batch-size=4
 
@@ -84,3 +82,4 @@ classifier-threshold=0.51
 process-mode=2
 #scaling-filter=0
 #scaling-compute-hw=0
+

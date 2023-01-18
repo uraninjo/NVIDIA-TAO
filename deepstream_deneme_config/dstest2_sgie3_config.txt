@@ -57,10 +57,9 @@ gpu-id=0
 net-scale-factor=1
 
 tlt-model-key=tlt_encode
-tlt-encoded-model=../../../../samples/models/
 
-labelfile-path=../../../../samples/models/Secondary_CarMake/labels.txt
-int8-calib-file=../../../../samples/models/Secondary_CarMake/cal_trt.bin
+tlt-encoded-model=../../models/Emotion/final_model.etlt
+labelfile-path=/opt/nvidia/deepstream/deepstream-6.1/samples/models/Emotion/labels.txt
 
 input-dims=3;100;100;0
 uff-input-blob-name=input_1
