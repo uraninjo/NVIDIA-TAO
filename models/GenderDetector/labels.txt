@@ -1,2 +1,1 @@
-female
-male
+female;male;
