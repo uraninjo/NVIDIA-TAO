@@ -131,7 +131,7 @@ def main(args):
 
     #Set properties of pgie and sgie
     pgie.set_property('config-file-path', "peoplenet_cfg.txt")
-    sgie1.set_property('config-file-path', "facedetect_cfg.txt")
+    sgie1.set_property('config-file-path', "emotionnet_cfg.txt")
     sgie2.set_property('config-file-path', "gender_cfg.txt")
     #sgie3.set_property('config-file-path', "dstest2_sgie3_config.txt")
 

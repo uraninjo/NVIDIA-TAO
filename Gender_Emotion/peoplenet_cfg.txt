@@ -1,4 +1,3 @@
-
 [property]
 gpu-id=0
 net-scale-factor=0.0039215697906911373
@@ -7,7 +6,7 @@ tlt-encoded-model=/opt/nvidia/deepstream/deepstream-6.1/samples/models/tao_pretr
 labelfile-path=/opt/nvidia/deepstream/deepstream-6.1/samples/models/tao_pretrained_models/peopleNet/labels.txt
 int8-calib-file=/opt/nvidia/deepstream/deepstream-6.1/samples/models/tao_pretrained_models/peopleNet/V2.6/resnet34_peoplenet_int8.txt
 model-engine-file=/opt/nvidia/deepstream/deepstream-6.1/samples/models/tao_pretrained_models/peopleNet/V2.6/resnet34_peoplenet_int8.etlt_b32_gpu0_fp16.engine
-input-dims=3;544;960;0
+infer-dims=3;544;960
 uff-input-blob-name=input_1
 batch-size=32
 process-mode=1

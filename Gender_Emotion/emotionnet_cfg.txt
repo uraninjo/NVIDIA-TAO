@@ -1,0 +1,40 @@
+[property]
+gpu-id=0
+net-scale-factor=1.0
+offsets=103.939;116.779;123.68
+model-color-format=1
+batch-size=2
+
+labelfile-path=/home/uraninjo/Masaüstü/OpenZeka/TAO/NVIDIA-TAO-Works/models/Emotion_Ours/labels.txt
+tlt-encoded-model=/home/uraninjo/Masaüstü/OpenZeka/TAO/NVIDIA-TAO-Works/models/Emotion_Ours/emotion.etlt
+tlt-model-key=nvidia_tao
+model-engine-file=/home/uraninjo/Masaüstü/OpenZeka/TAO/NVIDIA-TAO-Works/models/Emotion_Ours/emotion.etlt_b2_gpu0_fp32.engine
+infer-dims=3;100;100
+uff-input-blob-name=input_1
+uff-input-order=0
+output-blob-names=predictions/Softmax
+
+num-detected-classes=5
+gie-unique-id=3
+operate-on-gie-id=1
+operate-on-class-ids=2
+
+
+## 0=FP32, 1=INT8, 2=FP16 mode
+network-mode=0
+# process-mode: 2 - inferences on crops from primary detector, 1 - inferences on whole frame
+process-mode=2
+interval=0
+network-type=1 # defines that the model is a classifier.
+classifier-threshold=0.2
+classifier-async-mode=1
+
+## Per class configurations
+[class-attrs-all]
+topk=20
+nms-iou-threshold=0.4
+eps=0.2
+pre-cluster-threshold=0.3
+group-threshold=1
+
+
